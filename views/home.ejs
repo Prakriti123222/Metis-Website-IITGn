@@ -51,6 +51,7 @@
     </h1>
     <div class="quick-updates dark-bg-color light-color">
         <div class="container">
+            
             <% list=list.reverse() %>
                 <% list.forEach(function(item){ %>
                     <div class="single-text">
@@ -77,8 +78,8 @@
                                     </div>
                                     <% } %>
                                         <p class="updates-alignment">
-                                            <% var d= item.published_at.substring(0,10); %>
-                                                Updated on <%= d.substring(8,10)%>-<%=d.substring(5,7)%>-<%=d.substring(0,4) %>      
+                                            <% var d= item.updatedAt.substring(0,10); %>
+                                                Last Updated on <%= d.substring(8,10)%>-<%=d.substring(5,7)%>-<%=d.substring(0,4) %>      
                                         </p>
                     </div>
                     <hr>

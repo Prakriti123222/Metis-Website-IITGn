@@ -1,6 +1,5 @@
 require('dotenv').config() 
 const express = require("express");
-const https = require('https');
 const app = express();
 const ejs = require("ejs");
 const _ = require("lodash");
@@ -137,6 +136,14 @@ app.get("/metis/active_members", async (req, res) => {
 
     const googleSheets = google.sheets({ version: "v4", auth: client })
 
+    // getting last updated date
+    // const metaData = await googleSheets.spreadsheets.get({
+    //     auth,
+    //     spreadsheetId,   
+    // });
+
+    // var date = metaData.headers.date.substring(5,16);
+
     // read rows
     const getRows = await googleSheets.spreadsheets.values.get({
         auth,
@@ -164,7 +171,7 @@ app.get("/metis/active_members", async (req, res) => {
     l = l.reverse()
 
     // res.render("active", { dataList: getRows.data.values.slice(0, 15) })
-    res.render("active_members", { title: "", pageTitle: "Active Members | Metis", dataList: l.slice(0, 10) })
+    res.render("active_members", { title: "", pageTitle: "Active Members | Metis", dataList: l.slice(0, 10)})
 });
 
 

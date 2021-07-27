@@ -18,6 +18,7 @@ a.link-color:visited {
 /* mouse over link */
 a.link-color:hover {
   color: wheat;
+  font-size: 1.35rem;
 }
 
 /* selected link */
