@@ -1,0 +1,46 @@
+<div class="container text-center">
+    <h1 class="heading gsap-headings"><u>Active Members</u></h1>
+    <h3 class="home-headings gsap-up"> Names & Points</h3>
+    <div class="col-sm-8 center-of-box">
+        <table class="table text-center gsap-up">
+
+            <% dataList.forEach(function(data){ %>
+
+                <tr class="dark-color tr">
+                    <td class="td ">
+                        <% if (data[1].length> 1){ %>
+                            <table>
+                                <% data[1].forEach(function(name){ %>
+                                    <tr>
+                                        <td>
+                                            <%= name %>
+                                        </td>
+                                    </tr>
+                                    <% }) %>
+                            </table>
+                            <% } else{ %>
+                                <%= data[1] %>
+                                    <% } %>
+                    </td>
+                    <td class="td">
+                        <% if (data[1].length> 1){ %>
+                            <table>
+                                <% data[1].forEach(function(name){ %>
+                                    <tr>
+                                        <td>
+                                            <%= data[0] %>
+                                        </td>
+                                    </tr>
+                                    <% }) %>
+                            </table>
+                            <% } else { %>
+                                <%= data[0] %>
+                                    <% } %>
+                    </td>
+                </tr>
+                <% }) %>
+        </table>
+    </div>
+    <div class="gsap-up"></div>
+    <div class="gsap-up"></div>
+</div>

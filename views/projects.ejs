@@ -1,0 +1,29 @@
+<div class="container text-center">
+    <h1 class="heading gsap-headings"><u>Projects</u></h1>
+
+    <div class=" row row-cols-1 row-cols-md-3 g-4">
+
+        <% array=array.sort(); %>
+
+            <% array.forEach(function(item){ %>
+
+                <div class="col gsap-up">
+                    <div class="card card-style" data-aos="fade-up">
+
+                        <img src=<%=item.Relevant_image_link %> class="card-img-top card-image" alt="image">
+
+                        <div class="card-body">
+                            <h5 class="card-title content-font">
+                                <%=item.Title%>
+                            </h5>
+                            <p class="card-text animation-reverse">
+                                <a href="/metis/projects/<%=item.Title%>" class="big-link" aria-label="know more">Read More</a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <% }) %>
+    </div>
+</div>
