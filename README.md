@@ -2,7 +2,7 @@ This website is developed under Metis Summer Project
 
 This website is hosted on https://metis-website-iitgn.herokuapp.com/
 
-Developer
+Developers
 
 Prakriti        https://github.com/Prakriti123222
 
