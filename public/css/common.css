@@ -59,3 +59,47 @@ hr {
     font-family:'Ubuntu', sans-serif;
 }
 
+
+.all-text {
+    background-color: rgba(10, 10, 10, 0.938); 
+    background-color: rgba(12, 0, 0, 0.4);
+    /* background-color: rgb(39, 32, 32); */
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    text-align: center;
+}
+
+.all-title{
+    font-size: 12vw;
+}
+
+.all-image{
+    width: 100vw;
+    height: 60vh;
+    margin-bottom: 10vh;
+}
+
+.events-title{
+    font-size: 8vw;
+}
+
+.all-projects{
+    font-size: 6vw;
+}
+
+.error-image{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.active-title{
+    font-size: 10vw;
+}

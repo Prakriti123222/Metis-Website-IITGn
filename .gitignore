@@ -74,6 +74,7 @@ web_modules/
 
 # dotenv environment variables file
 .env
+.credentials.json
 .env.test
 .env.production
 

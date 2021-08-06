@@ -11,6 +11,7 @@ var expressLayouts = require("express-ejs-layouts");
 app.set('view engine', 'ejs');
 // app.use(express.static("public"));
 app.use(express.static(path.join(__dirname, 'public')));
+
 app.use(expressLayouts);
 
 app.get("/", function (req, response) {
@@ -174,11 +175,17 @@ app.get("/metis/active_members", async (req, res) => {
     res.render("active_members", { title: "", pageTitle: "Active Members | Metis", dataList: l.slice(0, 10)})
 });
 
-
 app.get("/:id", function (req, res) {
     res.render("Error", { pageTitle: "", title: "Error" });
 })
 
+app.get("/:id/:id", function (req, res) {
+    res.render("Error", { pageTitle: "", title: "Error" });
+})
+
+app.get("/:id/:id/:id", function (req, res) {
+    res.render("Error", { pageTitle: "", title: "Error" });
+})
 
 app.listen(process.env.PORT || 3000, function () {
     console.log(`listening at http://localhost:${3000}`);
