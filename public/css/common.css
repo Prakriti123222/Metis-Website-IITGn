@@ -85,6 +85,10 @@ hr {
     margin-bottom: 10vh;
 }
 
+.m-bottom{
+    margin-bottom: 20vh;
+}
+
 .events-title{
     font-size: 8vw;
 }
@@ -102,4 +106,9 @@ hr {
 
 .active-title{
     font-size: 10vw;
+}
+
+.top-image1{
+    width: 100vw;
+    height: 75vh;
 }
